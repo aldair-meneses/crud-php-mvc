@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Aldrick\\Mvc\\": "src/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public/"
+    }
+}
