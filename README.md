@@ -1,6 +1,6 @@
-# MeuPrimeiroCRUD
+# Projeto MVC
 
-Este é o meu primeiro projeto CRUD utilizando PHP e o padrão de arquitetura MVC. Também estou utilizando Orientação a Objetos como paradigma do projeto.
+Este é o meu primeiro projeto utilizando PHP e o padrão de arquitetura MVC. Também estou utilizando Orientação a Objetos como paradigma do projeto.
 
 ## Tecnologias utilizadas
 - PHP
