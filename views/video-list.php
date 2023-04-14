@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . '/inicio-html.php';
-/** @var \Aldrick\Mvc\Entity\Video[] $videoList */
+if($_GET['sucesso'] === '1'){
+    require_once __DIR__ . '/video-form-status.php';
+}
 ?>
 
 <ul class="videos__container">
