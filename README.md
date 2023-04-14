@@ -27,10 +27,6 @@ Para iniciar o projeto, navegue até o diretório do projeto e execute o comando
 Abra seu navegador e acesse `http://localhost:8080` para visualizar o projeto
  em execução.
 
-
 # To-do 
 
 - Ambiente docker para desenvolvimento com PHP 8.2 
-
-
-
