@@ -2,7 +2,19 @@
 
 declare(strict_types=1);
 
-$dbPath = __DIR__ . '/banco.sqlite';
+function createDb(){
+    $dbFile = __DIR__ . '/banco.sqlite';
 
-$pdo = new PDO("sqlite:$dbPath");
-$pdo->exec('CREATE TABLE users (id INTEGER PRIMARY KEY, email TEXT, password TEXT);');
+    if (!is_file($dbFile)){
+        fopen($dbFile, 'w+');
+        $pdo = new PDO("sqlite:$dbFile");
+        $pdo->exec('CREATE TABLE videos (id INTEGER PRIMARY KEY, url TEXT, title TEXT)');
+        $pdo->exec('CREATE TABLE users (id INTEGER PRIMARY KEY, email TEXT, password TEXT);');
+        fclose(STDIN);
+    };
+
+    exit();
+
+}
+
+createDb();

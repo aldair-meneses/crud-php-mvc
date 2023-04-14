@@ -8,6 +8,7 @@
         "start": [
             "php cria-banco.php",
             "php -S localhost:8000 -t public/"
-        ]
+        ],
+        "adduser": "php cria-usuario.php"
     }
 }
