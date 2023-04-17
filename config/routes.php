@@ -11,4 +11,5 @@ return [
     'GET|/remover-video' => \Aldrick\Mvc\Controller\DeleteVideoController::class,
     'GET|/login' => \Aldrick\Mvc\Controller\LoginFormController::class,
     'POST|/login' => \Aldrick\Mvc\Controller\LoginController::class,
+    'GET|/logout' => \Aldrick\Mvc\Controller\LogoutController::class,
 ];
