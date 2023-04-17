@@ -11,17 +11,16 @@ Este é o meu primeiro projeto utilizando PHP e o padrão de arquitetura MVC. Ta
 
 1. Clone o repositório ou faça o download do código fonte:
 ```bash
-git clone git@github.com:aldair-meneses/crud-php-mvc.git
-
+git clone https://github.com/aldair-meneses/crud-php-mvc.git
 ``` 
 2. Navegue até o diretório do projeto e execute o comando `composer dump-autoload` para gerar o autoloader do Composer:
 ```bash
 cd crud-php-mvc
 ```
 
-3. Gere o autoloader:
+3. Gere o autoloader com o composer
 ```bash
-  composer dumpautoload
+composer dumpautoload
 ```
 
 ## Uso
