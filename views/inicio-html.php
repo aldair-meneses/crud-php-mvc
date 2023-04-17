@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="/css/estilos-form.css">
     <link rel="stylesheet" href="/css/flexbox.css">
-    <title>Aldrick Medias</title>
+    <title>Aldrick Mydia</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
@@ -23,7 +23,7 @@
 
         <div class="cabecalho__icones">
             <a href="/novo-video" class="cabecalho__videos"></a>
-            <a href="./pages/login.html" class="cabecalho__sair">Sair</a>
+            <a href="/logout" class="cabecalho__sair">Sair</a>
         </div>
     </nav>
 
