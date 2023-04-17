@@ -8,7 +8,7 @@ function createDb(){
     if (!is_file($dbFile)){
         fopen($dbFile, 'w+');
         $pdo = new PDO("sqlite:$dbFile");
-        $pdo->exec('CREATE TABLE videos (id INTEGER PRIMARY KEY, url TEXT, title TEXT)');
+        $pdo->exec('CREATE TABLE videos (id INTEGER PRIMARY KEY, url TEXT, title TEXT, image_path TEXT)');
         $pdo->exec('CREATE TABLE users (id INTEGER PRIMARY KEY, email TEXT, password TEXT);');
         fclose(STDIN);
     };
