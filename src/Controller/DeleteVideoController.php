@@ -22,9 +22,9 @@ class DeleteVideoController implements Controller
 
         $success = $this->videoRepository->remove($id);
         if ($success === false) {
-            header('Location: /?sucesso=0');
+            header('Location: /');
         } else {
-            header('Location: /?sucesso=1');
+            header('Location: /');
         }
 
     }
