@@ -44,11 +44,11 @@ class VideoRepository
         if ($video->getFilePath() !== null) {
             $updateImageSql = ', image_path = :image_path';
         }
-        $sql = 'UPDATE videos SET
-                url = :url,
-                title = :title
-                $updateImageSql
-            WHERE id = :id;';
+        $sql = "UPDATE videos SET
+                  url = :url,
+                  title = :title
+                                    $updateImageSql
+              WHERE id = :id;";
         $statement = $this->pdo->prepare($sql);
 
         $statement->bindValue(':url', $video->url);
