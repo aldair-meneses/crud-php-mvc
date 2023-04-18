@@ -1,9 +1,9 @@
 *,
 *::before,
 *::after {
-    --azul-escuro: #154580;
-    --azul-medio: #3970BE;
-    --azul-claro: #E5F1FF;
+    --azul-escuro: #7146CF;
+    --azul-medio: #7146A0;
+    --azul-claro: #F4F3E5;
     --cinza-texto: #444444;
     --cinza-claro: #ECECEC;
     box-sizing: border-box;
@@ -29,7 +29,7 @@ header {
 }
 
 .cabecalho {
-    background-color: white;
+    background-color: #A5D7E8;
     top: 0;
     height: 80px;
     width: 100%;
@@ -40,7 +40,9 @@ header {
 .logo {
     background-image: url(../img/cabecalho/Logo.png);
     background-repeat: no-repeat;
-    padding: 15px 65px;
+    background-color: #A5D7E8;
+    background-size: cover;
+    padding:40px;
     cursor: pointer;
 }
 
@@ -116,7 +118,7 @@ header {
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-name: fadeOut;
-    background-color: #89D91C;
+    background-color: #63C7AD;
     padding: 2rem;
     position: absolute;
     width: 100%;    
