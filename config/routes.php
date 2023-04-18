@@ -12,4 +12,6 @@ return [
     'GET|/login' => \Aldrick\Mvc\Controller\LoginFormController::class,
     'POST|/login' => \Aldrick\Mvc\Controller\LoginController::class,
     'GET|/logout' => \Aldrick\Mvc\Controller\LogoutController::class,
+    'GET|/videos-json' => \Aldrick\Mvc\Controller\JsonVideoListController::class,
+    'POST/videos' => \Aldrick\Mvc\Controller\NewJsonVideoController::class
 ];
