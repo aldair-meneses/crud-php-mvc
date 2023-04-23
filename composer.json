@@ -7,8 +7,19 @@
     "scripts": {
         "start": [
             "php cria-banco.php",
-            "php -S localhost:8000 -t public/"
+            "php -S localhost:8080 -t public/"
         ],
         "adduser": "php cria-usuario.php"
+    },
+    "require": {
+        "php": ">8.1",
+        "ext-pdo": "*",
+        "nyholm/psr7": "^1.5",
+        "nyholm/psr7-server": "^1.0",
+        "psr/http-message": "^1.0",
+        "ext-fileinfo": "*",
+        "psr/http-server-handler": "^1.0",
+        "php-di/php-di": "^6.4",
+        "league/plates": "^3.4"
     }
 }

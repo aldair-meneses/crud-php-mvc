@@ -6,22 +6,32 @@ namespace Aldrick\Mvc\Controller;
 
 use Aldrick\Mvc\Entity\Video;
 use Aldrick\Mvc\Repository\VideoRepository;
+use League\Plates\Engine;
+use Nyholm\Psr7\Response;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\RequestHandlerInterface;
 
-class VideoFormController implements Controller
+class VideoFormController implements RequestHandlerInterface
 {
-    public function __construct(private VideoRepository $repository)
-    {
+    public function __construct(
+        private VideoRepository $repository,
+        private Engine $templates
+    ) {
     }
 
-    public function processaRequisicao(): void
+    public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+        $queryParams = $request->getQueryParams();
+        $id = filter_var($queryParams['id'] ?? '', FILTER_VALIDATE_INT);
         /** @var ?Video $video */
         $video = null;
         if ($id !== false && $id !== null) {
             $video = $this->repository->find($id);
         }
 
-        require_once __DIR__ . '/../../views/video-form.php';
+        return new Response(200, body: $this->templates->render('video-form', [
+            'video' => $video,
+        ]));
     }
 }
