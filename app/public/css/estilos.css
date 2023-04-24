@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+    --azul-escuro: #7146CF;
+    --azul-medio: #7146A0;
+    --azul-claro: #F4F3E5;
+    --cinza-texto: #444444;
+    --cinza-claro: #ECECEC;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: var(--azul-claro);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* ESTILOS DO HEADER */
+header {
+    position: sticky;
+    top: 0;
+}
+
+.cabecalho {
+    background-color: #A5D7E8;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+    z-index: 2;
+}
+
+.logo {
+    background-image: url(../img/cabecalho/Logo.png);
+    background-repeat: no-repeat;
+    background-color: #A5D7E8;
+    background-size: cover;
+    padding:40px;
+    cursor: pointer;
+}
+
+
+.cabecalho__videos {
+    background-image: url(../img/cabecalho/video_call.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+.cabecalho__sair {
+    margin: 0 20px;
+    padding: 5px 10px;
+    border-radius: 10%;
+    background-color: var(--azul-escuro);
+
+}
+
+/* ESTILOS DA SEÇÃO VÍDEOS */
+
+.videos__container {
+    color: black;
+}
+
+.mensagem {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mensagem__imagem {
+    width: 30%;
+}
+
+.mensagem__titulo {
+    color: var(--azul-medio);
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.pesquisar__input {
+    width: 260px;
+    height: 32px;
+    border: 1px solid rgb(211, 211, 211);
+    font-size: 16px;
+    padding: 3px 8px;
+    border: 1px solid rgb(211, 211, 211);
+    color: var(--azul-escuro);
+}
+
+.pesquisar__botao {
+    background-image: url(../img/cabecalho/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #F9F9F9;
+    border-left: none;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    99% {opacity: 0; visibility: visible;}
+    100% {opacity: 0; visibility: hidden;}
+}
+
+.form-sucess {
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: fadeOut;
+    background-color: #63C7AD;
+    padding: 2rem;
+    position: absolute;
+    width: 100%;    
+}
+
+.form-failed {
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: fadeOut;
+    background-color: #F0972B;
+    padding: 2rem;
+    position: absolute;
+    width: 100%;
+}
+
+.form-status {
+    color: #154580;
+    font-size: 1.5rem;
+}
+
+@media(min-width: 834px) {
+
+    body {
+        height: 100vh;
+    }
+
+}

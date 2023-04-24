@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Aldrick\\Mvc\\": "src/"
+        }
+    },
+    "scripts": {
+        "start": [
+            "php cria-banco.php"
+        ],
+        "adduser": "php cria-usuario.php"
+    }
+}
