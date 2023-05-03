@@ -5,8 +5,8 @@ services:
     build:
       context: ./docker/php-fpm
     volumes:
-      - ./app/public:/var/www/public
-      - ./app/vendor:/var/www/vendor
+      - ./app:/var/www/
+      - ./app/config:/var/www/
 
   nginx:
     build:
